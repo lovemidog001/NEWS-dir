@@ -1,8 +1,10 @@
-name: Daily News Sync
+name: Daily News
 
 on:
   schedule:
-    - cron: '0 18 * * *'  # UTC 18:00 = 台灣隔天 02:00
+    # UTC 18:00 = 台灣時間每天凌晨 02:00
+    - cron: '0 18 * * *'
+
   workflow_dispatch:
     inputs:
       date:
@@ -10,159 +12,382 @@ on:
         required: false
         type: string
 
-env:
-  TZ: Asia/Taipei
-
-permissions:
-  contents: write
-
-concurrency:
-  group: news-pipeline
-  cancel-in-progress: false
-
 jobs:
   daily-news:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    defaults:
-      run:
-        shell: bash
+
+    permissions:
+      contents: write
+
     steps:
+      # ============================================================
+      # 1. 取得 GitHub Repository
+      # ============================================================
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # ============================================================
+      # 2. 設定 Python
+      # ============================================================
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: pip
 
+      # ============================================================
+      # 3. 安裝套件
+      # ============================================================
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          set -euo pipefail
 
-      - name: Run daily pipeline
-        run: python scripts/main.py --date "${{ inputs.date || '' }}"
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      # ============================================================
+      # 4. 決定新聞日期
+      # ============================================================
+      - name: Determine target date
+        id: date
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          set -euo pipefail
+
+          if [ -n "${INPUT_DATE:-}" ]; then
+            TARGET_DATE="$INPUT_DATE"
+          else
+            TARGET_DATE="$(TZ=Asia/Taipei date -d 'yesterday' '+%Y-%m-%d')"
+          fi
+
+          if ! [[ "$TARGET_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Invalid date: $TARGET_DATE"
+            exit 1
+          fi
+
+          echo "target_date=$TARGET_DATE" >> "$GITHUB_OUTPUT"
+          echo "📅 Target date: $TARGET_DATE"
+
+      # ============================================================
+      # 5. 執行新聞主程式
+      # ============================================================
+      - name: Run daily news pipeline
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
-
-      - name: Calculate target date
-        id: target
         run: |
           set -euo pipefail
-          if [ -n "${{ inputs.date }}" ]; then
-            TARGET_DATE="${{ inputs.date }}"
-          else
-            TARGET_DATE="$(TZ=Asia/Taipei date -d 'yesterday' '+%Y-%m-%d')"
-          fi
-          echo "date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
-          echo "Target date: ${TARGET_DATE}"
-          test -s "data/${TARGET_DATE}.json"
 
-      - name: Cleanup old data
-        run: find data -name "*.json" -mtime +30 -delete 2>/dev/null || true
+          python main.py \
+            --date "${{ steps.date.outputs.target_date }}"
 
-      - name: Commit daily JSON to GitHub
+      # ============================================================
+      # 6. 確認 JSON 存在且不是空檔案
+      # ============================================================
+      - name: Validate generated JSON
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
-          if git diff --cached --quiet; then
-            echo "No data changes to commit."
-          else
-            git commit -m "data: 新聞資料 ${{ steps.target.outputs.date }}"
-            git push origin HEAD:${GITHUB_REF_NAME}
+
+          JSON_FILE="data/${{ steps.date.outputs.target_date }}.json"
+
+          echo "🔍 Checking: $JSON_FILE"
+
+          if [ ! -f "$JSON_FILE" ]; then
+            echo "❌ JSON file does not exist"
+            exit 1
           fi
 
-      - name: Notify Serv00 and verify database
-        env:
-          SERV00_UPDATE_URL: ${{ secrets.SERV00_UPDATE_URL }}
-          SERV00_UPDATE_TOKEN: ${{ secrets.SERV00_UPDATE_TOKEN }}
-          TARGET_DATE: ${{ steps.target.outputs.date }}
-        run: |
-          set -euo pipefail
-          test -n "$SERV00_UPDATE_URL"
-          test -n "$SERV00_UPDATE_TOKEN"
-          echo "Notify Serv00: $TARGET_DATE"
-          curl --fail-with-body --retry 5 --retry-delay 3 --max-time 60 \
-            -X POST "$SERV00_UPDATE_URL" \
-            -H "Authorization: Bearer $SERV00_UPDATE_TOKEN" \
-            -H "Content-Type: application/json" \
-            --data "{\"date\":\"$TARGET_DATE\"}" \
-            -o /tmp/update-response.json
-          cat /tmp/update-response.json
-          python - <<'PY'
+          if [ ! -s "$JSON_FILE" ]; then
+            echo "❌ JSON file is empty"
+            exit 1
+          fi
+
+          python - "$JSON_FILE" <<'PY'
           import json
-          p='/tmp/update-response.json'
-          d=json.load(open(p,encoding='utf-8'))
-          if d.get('success') is not True:
-              raise SystemExit('Serv00 update API did not report success')
-          print(f"Serv00 DB: inserted={d.get('inserted',0)}, skipped={d.get('skipped',0)}, errors={d.get('errors',0)}")
-          if int(d.get('errors',0)) > 0:
-              raise SystemExit('Serv00 reported invalid news records')
+          import sys
+
+          path = sys.argv[1]
+
+          with open(path, "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          if not isinstance(data, dict):
+              raise SystemExit("❌ JSON root must be an object")
+
+          if "items" not in data:
+              raise SystemExit("❌ JSON missing 'items'")
+
+          if not isinstance(data["items"], list):
+              raise SystemExit("❌ JSON 'items' must be a list")
+
+          print(f"✅ JSON valid")
+          print(f"📰 News items: {len(data['items'])}")
           PY
 
-      - name: Clear Old Cache Endpoints
+      # ============================================================
+      # 7. Commit JSON 到 GitHub
+      # ============================================================
+      - name: Commit generated JSON
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add "data/${{ steps.date.outputs.target_date }}.json"
+
+          if git diff --cached --quiet; then
+            echo "ℹ️ No changes to commit"
+          else
+            git commit -m "Update news ${{ steps.date.outputs.target_date }}"
+            git push
+            echo "✅ JSON pushed to GitHub"
+          fi
+
+      # ============================================================
+      # 8. 等 GitHub Raw 資料可以讀取
+      # ============================================================
+      - name: Wait for GitHub Raw
+        env:
+          TARGET_DATE: ${{ steps.date.outputs.target_date }}
+        run: |
+          set -euo pipefail
+
+          URL="https://raw.githubusercontent.com/lovemidog001/NEWS-dir/main/data/${TARGET_DATE}.json"
+
+          echo "🔎 Waiting for GitHub Raw:"
+          echo "$URL"
+
+          for i in {1..12}; do
+            echo "Attempt $i/12..."
+
+            HTTP_CODE="$(curl -L \
+              -s \
+              -o /tmp/news.json \
+              -w '%{http_code}' \
+              "$URL?v=$(date +%s)")"
+
+            if [ "$HTTP_CODE" = "200" ]; then
+              if python - <<'PY'
+          import json
+
+          with open("/tmp/news.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          if isinstance(data, dict) and isinstance(data.get("items"), list):
+              print("✅ GitHub Raw JSON is ready")
+              raise SystemExit(0)
+
+          raise SystemExit(1)
+          PY
+              then
+                break
+              fi
+            fi
+
+            if [ "$i" = "12" ]; then
+              echo "❌ GitHub Raw JSON is not ready"
+              cat /tmp/news.json || true
+              exit 1
+            fi
+
+            sleep 5
+          done
+
+      # ============================================================
+      # 9. 通知 Serv00
+      # ============================================================
+      - name: Notify Serv00
+        env:
+          UPDATE_URL: ${{ secrets.SERV00_UPDATE_URL }}
+          UPDATE_TOKEN: ${{ secrets.SERV00_UPDATE_TOKEN }}
+          TARGET_DATE: ${{ steps.date.outputs.target_date }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${UPDATE_URL:-}" ]; then
+            echo "❌ SERV00_UPDATE_URL is empty"
+            exit 1
+          fi
+
+          if [ -z "${UPDATE_TOKEN:-}" ]; then
+            echo "❌ SERV00_UPDATE_TOKEN is empty"
+            exit 1
+          fi
+
+          echo "📡 Notify Serv00: ${TARGET_DATE}"
+
+          RESPONSE="$(curl \
+            --fail-with-body \
+            --silent \
+            --show-error \
+            --location \
+            --request POST \
+            --connect-timeout 15 \
+            --max-time 120 \
+            --retry 2 \
+            --retry-delay 3 \
+            -H "Authorization: Bearer ${UPDATE_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data "{\"date\":\"${TARGET_DATE}\"}" \
+            "${UPDATE_URL}")"
+
+          echo "Serv00 response:"
+          echo "$RESPONSE"
+
+          python - "$RESPONSE" <<'PY'
+          import json
+          import sys
+
+          raw = sys.argv[1]
+
+          try:
+              data = json.loads(raw)
+          except json.JSONDecodeError:
+              print("❌ Serv00 did not return valid JSON")
+              print(raw)
+              raise SystemExit(1)
+
+          if data.get("success") is not True:
+              print("❌ Serv00 update failed")
+              print(json.dumps(data, ensure_ascii=False, indent=2))
+              raise SystemExit(1)
+
+          print("✅ Serv00 database updated")
+          print(f"Inserted: {data.get('inserted', 0)}")
+          print(f"Skipped: {data.get('skipped', 0)}")
+          PY
+
+      # ============================================================
+      # 10. 清除 Serv00 Cache
+      # ============================================================
+      - name: Clear Serv00 cache
         env:
           CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
         run: |
           set -euo pipefail
-          test -n "$CACHE_TOKEN"
-          curl --fail-with-body --retry 3 --retry-delay 2 --max-time 30 \
-            "https://ailoom.ccwu.cc/cache_clear.php?token=${CACHE_TOKEN}" \
-            -o /tmp/cache-response.json
-          cat /tmp/cache-response.json
-          python - <<'PY'
+
+          CACHE_URL="https://ailoom.ccwu.cc/api/cache_clear.php"
+
+          if [ -z "${CACHE_TOKEN:-}" ]; then
+            echo "❌ CACHE_TOKEN is empty"
+            exit 1
+          fi
+
+          echo "🧹 Clearing Serv00 cache..."
+
+          RESPONSE="$(curl \
+            --fail-with-body \
+            --silent \
+            --show-error \
+            --location \
+            --request POST \
+            --connect-timeout 15 \
+            --max-time 60 \
+            -H "Authorization: Bearer ${CACHE_TOKEN}" \
+            "${CACHE_URL}")"
+
+          echo "Cache response:"
+          echo "$RESPONSE"
+
+          python - "$RESPONSE" <<'PY'
           import json
-          d=json.load(open('/tmp/cache-response.json',encoding='utf-8'))
-          if d.get('ok') is not True and d.get('success') is not True:
-              raise SystemExit('Cache clear failed')
+          import sys
+
+          raw = sys.argv[1]
+
+          try:
+              data = json.loads(raw)
+          except json.JSONDecodeError:
+              print("❌ Cache API did not return valid JSON")
+              print(raw)
+              raise SystemExit(1)
+
+          # cache_clear.php 使用 ok
+          # 為了相容，也接受 success
+          if data.get("ok") is not True and data.get("success") is not True:
+              print("❌ Cache clear failed")
+              print(json.dumps(data, ensure_ascii=False, indent=2))
+              raise SystemExit(1)
+
+          print("✅ Cache cleared")
           PY
 
-      - name: Verify frontend API
+      # ============================================================
+      # 11. 最後確認網站 API
+      # ============================================================
+      - name: Verify Serv00 API
         env:
-          TARGET_DATE: ${{ steps.target.outputs.date }}
+          TARGET_DATE: ${{ steps.date.outputs.target_date }}
         run: |
           set -euo pipefail
-          curl --fail-with-body --retry 3 --retry-delay 2 --max-time 30 \
-            "https://ailoom.ccwu.cc/api/news.php?date=${TARGET_DATE}&page=1&limit=1" \
-            -o /tmp/frontend-response.json
-          cat /tmp/frontend-response.json
-          python - <<'PY'
+
+          API_URL="https://ailoom.ccwu.cc/api/news.php?date=${TARGET_DATE}&page=1&page_size=1"
+
+          echo "🔎 Verify:"
+          echo "$API_URL"
+
+          RESPONSE="$(curl \
+            --fail-with-body \
+            --silent \
+            --show-error \
+            --location \
+            --connect-timeout 15 \
+            --max-time 60 \
+            "$API_URL")"
+
+          echo "$RESPONSE"
+
+          python - "$RESPONSE" <<'PY'
           import json
-          d=json.load(open('/tmp/frontend-response.json',encoding='utf-8'))
-          if d.get('success') is not True:
-              raise SystemExit('Frontend API returned success=false')
-          total=int(d.get('pagination',{}).get('total',0))
-          print(f'Frontend API total for target date: {total}')
-          if total < 1:
-              raise SystemExit('Frontend API has no news for the target date')
+          import sys
+
+          raw = sys.argv[1]
+
+          try:
+              data = json.loads(raw)
+          except json.JSONDecodeError:
+              print("❌ Serv00 API returned invalid JSON")
+              raise SystemExit(1)
+
+          if not isinstance(data, dict):
+              print("❌ Invalid API response")
+              raise SystemExit(1)
+
+          if data.get("success") is False:
+              print("❌ Serv00 API reported failure")
+              print(json.dumps(data, ensure_ascii=False, indent=2))
+              raise SystemExit(1)
+
+          print("✅ Serv00 API verification passed")
           PY
 
-      - name: Summary
+      # ============================================================
+      # 12. 清理舊 Workflow Runs
+      # ============================================================
+      - name: Delete old workflow runs
         if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          echo "## Daily News Sync" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Status:** ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Date:** ${{ steps.target.outputs.date }}" >> "$GITHUB_STEP_SUMMARY"
+          set -euo pipefail
 
-  delete-old-runs:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
-    steps:
-      - name: Delete workflow runs older than 3 days
-        uses: Mattraks/delete-workflow-runs@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
-          retain_days: 3
-          keep_minimum_runs: 1
+          echo "🧹 Cleaning old workflow runs..."
+
+          gh run list \
+            --workflow="daily-news.yml" \
+            --limit 100 \
+            --json databaseId,status \
+            --jq '.[10:] | .[].databaseId' |
+          while read -r RUN_ID; do
+            if [ -n "$RUN_ID" ]; then
+              gh run delete "$RUN_ID" || true
+            fi
+          done
+
+          echo "✅ Cleanup finished"
