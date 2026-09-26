@@ -53,13 +53,11 @@ jobs:
 
       - name: Calculate target date
         id: target
-        # 將 GitHub Actions 輸入傳入 Bash 環境變數，避免直接拼接字串造成語法問題
         env:
           INPUT_DATE: ${{ inputs.date }}
         run: |
           set -euo pipefail
           
-          # 判斷如果有傳入 INPUT_DATE 且不為空字串，則使用輸入值，否則計算昨天日期
           if [ -n "${INPUT_DATE:-}" ]; then
             TARGET_DATE="$INPUT_DATE"
           else
@@ -69,7 +67,6 @@ jobs:
           echo "date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
           echo "Target date: ${TARGET_DATE}"
           
-          # 檢查檔案是否存在且大小大於 0；若不存在，印出明確錯誤訊息再 exit 1，避免默默報錯
           FILE_PATH="data/${TARGET_DATE}.json"
           if [ ! -s "$FILE_PATH" ]; then
             echo "Error: File $FILE_PATH does not exist or is empty!"
@@ -83,7 +80,7 @@ jobs:
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
           if git diff --cached --quiet; then
             echo "No data changes to commit."
@@ -122,7 +119,8 @@ jobs:
 
       - name: Clear Old Cache Endpoints
         env:
-          CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
+          # 將 Token 改為使用 SERV00_UPDATE_TOKEN
+          CACHE_TOKEN: ${{ secrets.SERV00_UPDATE_TOKEN }}
         run: |
           set -euo pipefail
           test -n "$CACHE_TOKEN"
