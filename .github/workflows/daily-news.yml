@@ -9,9 +9,6 @@ on:
         description: '指定新聞日期 (YYYY-MM-DD)，留空則使用昨天'
         required: false
         type: string
-  push:
-    paths:
-      - 'data/*.json'
 
 env:
   TZ: Asia/Taipei
@@ -124,7 +121,7 @@ jobs:
           python - <<'PY'
           import json
           d=json.load(open('/tmp/cache-response.json',encoding='utf-8'))
-          if d.get('success') is not True:
+          if d.get('ok') is not True and d.get('success') is not True:
               raise SystemExit('Cache clear failed')
           PY
 
@@ -154,77 +151,6 @@ jobs:
           echo "## Daily News Sync" >> "$GITHUB_STEP_SUMMARY"
           echo "**Status:** ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
           echo "**Date:** ${{ steps.target.outputs.date }}" >> "$GITHUB_STEP_SUMMARY"
-
-  sync-json-to-serv00:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Find changed JSON dates
-        id: changed
-        shell: bash
-        run: |
-          set -euo pipefail
-          BEFORE='${{ github.event.before }}'
-          AFTER='${{ github.sha }}'
-          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
-            git diff-tree --no-commit-id --name-only -r "$AFTER" -- 'data/*.json' > /tmp/changed.txt || true
-          else
-            git diff --name-only "$BEFORE" "$AFTER" -- 'data/*.json' > /tmp/changed.txt || true
-          fi
-          : > /tmp/dates.txt
-          while IFS= read -r file; do
-            name="$(basename "$file")"
-            if [[ "$name" =~ ^([0-9]{4}-[0-9]{2}-[0-9]{2})\.json$ ]]; then
-              echo "${BASH_REMATCH[1]}" >> /tmp/dates.txt
-            fi
-          done < /tmp/changed.txt
-          sort -u -o /tmp/dates.txt /tmp/dates.txt
-          cat /tmp/dates.txt
-          if [ -s /tmp/dates.txt ]; then echo 'has_dates=true' >> "$GITHUB_OUTPUT"; else echo 'has_dates=false' >> "$GITHUB_OUTPUT"; fi
-
-      - name: Notify Serv00 for each changed date
-        if: steps.changed.outputs.has_dates == 'true'
-        env:
-          SERV00_UPDATE_URL: ${{ secrets.SERV00_UPDATE_URL }}
-          SERV00_UPDATE_TOKEN: ${{ secrets.SERV00_UPDATE_TOKEN }}
-        run: |
-          set -euo pipefail
-          test -n "$SERV00_UPDATE_URL"
-          test -n "$SERV00_UPDATE_TOKEN"
-          while IFS= read -r date; do
-            [ -z "$date" ] && continue
-            echo "Sync Serv00: $date"
-            curl --fail-with-body --retry 5 --retry-delay 3 --max-time 60 \
-              -X POST "$SERV00_UPDATE_URL" \
-              -H "Authorization: Bearer $SERV00_UPDATE_TOKEN" \
-              -H "Content-Type: application/json" \
-              --data "{\"date\":\"$date\"}"
-          done < /tmp/dates.txt
-
-      - name: Clear Old Cache Endpoints
-        if: steps.changed.outputs.has_dates == 'true'
-        env:
-          CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
-        run: |
-          set -euo pipefail
-          test -n "$CACHE_TOKEN"
-          curl --fail-with-body --retry 3 --retry-delay 2 --max-time 30 \
-            "https://ailoom.ccwu.cc/cache_clear.php?token=${CACHE_TOKEN}" \
-            -o /tmp/cache-response.json
-          cat /tmp/cache-response.json
-
-      - name: Summary
-        if: always()
-        run: |
-          echo "## JSON → Serv00 同步" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Status:** ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
-          [ -f /tmp/dates.txt ] && sed 's/^/- /' /tmp/dates.txt >> "$GITHUB_STEP_SUMMARY" || true
 
   delete-old-runs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
