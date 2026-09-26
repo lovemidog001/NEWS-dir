@@ -1,0 +1,66 @@
+{
+  "providers": [
+    {
+      "id": "nvidia",
+      "name": "NVIDIA Nemotron",
+      "enabled": true,
+      "priority": 1,
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "api_key_env": "NVIDIA_API_KEY",
+      "base_url": "https://integrate.api.nvidia.com/v1",
+      "timeout": 30,
+      "max_tokens": 10,
+      "temperature": 0.1
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI GPT",
+      "enabled": true,
+      "priority": 2,
+      "model": "gpt-4o-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.openai.com/v1",
+      "timeout": 30,
+      "max_tokens": 10,
+      "temperature": 0.1
+    },
+    {
+      "id": "google",
+      "name": "Google Gemini",
+      "enabled": true,
+      "priority": 3,
+      "model": "gemini-1.5-flash",
+      "api_key_env": "GOOGLE_API_KEY",
+      "timeout": 30,
+      "max_tokens": 10,
+      "temperature": 0.1
+    },
+    {
+      "id": "agnes",
+      "name": "Agnes",
+      "enabled": true,
+      "priority": 4,
+      "model": "agnes-2.5-flash",
+      "api_key_env": "AGNES_API_KEY",
+      "base_url": "https://apihub.agnes-ai.com/v1",
+      "timeout": 60,
+      "max_tokens": 10,
+      "temperature": 0.1
+    }
+  ],
+  "categories": [
+    "政治",
+    "國際",
+    "財經",
+    "科技",
+    "社會",
+    "生活",
+    "健康",
+    "體育",
+    "娛樂",
+    "環境",
+    "教育"
+  ],
+  "system_prompt": "你是新聞分類專家。請將新聞標題分類為以下類別之一：\n{categories}\n\n規則：\n1. 僅回傳分類名稱，不要解釋、不要標點、不要多餘文字\n2. 如果無法判斷，回傳「未分類」\n3. 分類需精確對應上述類別之一",
+  "user_prompt_template": "新聞標題：{title}\n\n請分類："
+}

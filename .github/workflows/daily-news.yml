@@ -1,0 +1,140 @@
+name: Daily News Sync
+
+on:
+  schedule:
+    - cron: '0 18 * * *'  # UTC 18:00 = 台灣隔天 02:00
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '指定新聞日期 (YYYY-MM-DD)，留空則使用昨天'
+        required: false
+        type: string
+
+env:
+  TZ: Asia/Taipei
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-daily-pipeline
+  cancel-in-progress: false
+
+jobs:
+  daily-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Debug - List repository structure
+        run: |
+          echo "=== Repository root ==="
+          ls -la
+          echo "=== key files ==="
+          ls -la requirements.txt scripts config .github/workflows
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        run: |
+          python scripts/main.py --date "${{ inputs.date || '' }}"
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
+
+      - name: Calculate target date
+        id: target
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            TARGET_DATE="${{ inputs.date }}"
+          else
+            TARGET_DATE="$(TZ=Asia/Taipei date -d 'yesterday' '+%Y-%m-%d')"
+          fi
+          echo "date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
+          echo "📅 Target date: ${TARGET_DATE}"
+          test -s "data/${TARGET_DATE}.json"
+
+      - name: Cleanup old data
+        run: |
+          find data -name "*.json" -mtime +30 -delete 2>/dev/null || true
+
+      - name: Commit daily JSON to GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          if git diff --cached --quiet; then
+            echo "ℹ️ 沒有新的 data 變更（可能是重跑同一天資料）"
+          else
+            git commit -m "data: 新聞資料 ${{ steps.target.outputs.date }}"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+          echo "✅ JSON 已提交到 GitHub data/"
+
+      - name: Notify Serv00 to update SQLite
+        env:
+          SERV00_UPDATE_URL: ${{ secrets.SERV00_UPDATE_URL }}
+          SERV00_UPDATE_TOKEN: ${{ secrets.SERV00_UPDATE_TOKEN }}
+          TARGET_DATE: ${{ steps.target.outputs.date }}
+        run: |
+          if [ -z "$SERV00_UPDATE_URL" ] || [ -z "$SERV00_UPDATE_TOKEN" ]; then
+            echo "❌ 缺少 SERV00_UPDATE_URL 或 SERV00_UPDATE_TOKEN"
+            exit 1
+          fi
+          echo "📡 通知 Serv00 更新日期: $TARGET_DATE"
+          curl --fail-with-body --retry 3 --retry-delay 3 --max-time 60 \
+            -X POST "$SERV00_UPDATE_URL" \
+            -H "Authorization: Bearer $SERV00_UPDATE_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data "{\"date\":\"$TARGET_DATE\"}"
+
+      - name: Clear website cache
+        if: success()
+        env:
+          CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
+        run: |
+          if [ -z "$CACHE_TOKEN" ]; then
+            echo "ℹ️ 未設定 CACHE_TOKEN，略過快取清除"
+          else
+            curl --fail-with-body --retry 3 --retry-delay 2 --max-time 30 -sS \
+              "https://ailoom.ccwu.cc/cache_clear.php?token=${CACHE_TOKEN}" \
+              -w "\nHTTP %{http_code}\n"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Daily News Sync" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** ${{ steps.target.outputs.date }}" >> $GITHUB_STEP_SUMMARY
+
+  delete-old-runs:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Delete workflow runs older than 3 days
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 3
+          keep_minimum_runs: 1

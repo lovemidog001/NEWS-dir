@@ -1,0 +1,143 @@
+{
+  "sources": [
+    {
+      "id": "cna_politics",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/politics",
+      "category_map": {"default": "政治"},
+      "default_category": "政治",
+      "region": "taiwan",
+      "max_items": 30,
+      "timeout": 15
+    },
+    {
+      "id": "cna_social",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/social",
+      "category_map": {"default": "社會"},
+      "default_category": "社會",
+      "region": "taiwan",
+      "max_items": 30,
+      "timeout": 15
+    },
+    {
+      "id": "cna_finance",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/finance",
+      "category_map": {"default": "財經"},
+      "default_category": "財經",
+      "region": "taiwan",
+      "max_items": 30,
+      "timeout": 15
+    },
+    {
+      "id": "cna_technology",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/technology",
+      "category_map": {"default": "科技"},
+      "default_category": "科技",
+      "region": "taiwan",
+      "max_items": 30,
+      "timeout": 15
+    },
+    {
+      "id": "cna_lifehealth",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/lifehealth",
+      "category_map": {"default": "生活"},
+      "default_category": "生活",
+      "region": "taiwan",
+      "max_items": 30,
+      "timeout": 15
+    },
+    {
+      "id": "cna_sport",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/sport",
+      "category_map": {"default": "體育"},
+      "default_category": "體育",
+      "region": "taiwan",
+      "max_items": 30,
+      "timeout": 15
+    },
+    {
+      "id": "cna_entertainment",
+      "name": "中央社",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.feedburner.com/rsscna/stars",
+      "category_map": {"default": "娛樂"},
+      "default_category": "娛樂",
+      "region": "taiwan",
+      "max_items": 20,
+      "timeout": 15
+    },
+    {
+      "id": "ltn",
+      "name": "自由時報",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://news.ltn.com.tw/rss/all.xml",
+      "category_map": {},
+      "default_category": "未分類",
+      "region": "taiwan",
+      "max_items": 50,
+      "timeout": 15
+    },
+    {
+      "id": "bbc",
+      "name": "BBC News",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "category_map": {"default": "國際"},
+      "default_category": "國際",
+      "region": "international",
+      "max_items": 8,
+      "timeout": 15
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://techcrunch.com/feed/",
+      "category_map": {"default": "科技"},
+      "default_category": "科技",
+      "region": "international",
+      "max_items": 5,
+      "timeout": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "category_map": {"default": "科技"},
+      "default_category": "科技",
+      "region": "international",
+      "max_items": 5,
+      "timeout": 15
+    }
+  ],
+  "global_settings": {
+    "user_agent": "NewsRing/1.0 (+https://github.com/lovemidog001/NEWS-dir)",
+    "date_format": "%Y-%m-%d",
+    "max_items_per_source": 50,
+    "request_timeout": 15,
+    "taiwan_ratio": 0.8
+  }
+}
