@@ -1,7 +1,7 @@
 {
   "date": "2026-09-25",
   "timezone": "Asia/Taipei",
-  "collected_at": "2026-09-26T22:18:21.555394+08:00",
+  "collected_at": "2026-09-26T22:23:32.113467+08:00",
   "sources_count": 11,
   "items": [
     {
@@ -435,7 +435,7 @@
       "summary": "The BBC’s China correspondent Laura Bicker unpacks how the trip panned out for Beijing and Washington."
     }
   ],
-  "classified_at": "2026-09-26T22:18:43",
+  "classified_at": "2026-09-26T22:23:53",
   "classification_stats": {
     "總計": 43,
     "未分類": 0,
