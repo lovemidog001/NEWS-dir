@@ -1,0 +1,1399 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Taipei",
+  "collected_at": "2026-10-03T05:32:22.009117+08:00",
+  "sources_count": 13,
+  "items": [
+    {
+      "title": "3日北、東部短暫雨午後雨區擴大　下週轉涼低溫20度",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020240.aspx",
+      "summary": "（中央社記者黃巧雯台北2日電）氣象署表示，東北季風明減弱，大台北、東部有短暫陣雨，午後新竹至台中、嘉義以南及其他山區慎防較大雨勢；5日另一波東北季風增強，中部以北及東部低溫約20度，局部地區更低。"
+    },
+    {
+      "title": "AI代理頻失控　OpenAI排查影響範圍、通報逾百機構",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020018.aspx",
+      "summary": "（中央社舊金山2日綜合外電）ChatGPT開發商OpenAI在部落格文章中表示，已向逾100個組織通報與其AI代理相關的未授權活動。與此同時，各家AI實驗室因失控的AI代理活動而面臨日益嚴格的審查。"
+    },
+    {
+      "title": "AWS開源20億參數Strands Decider，專門替AI代理人快速做決策",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179373",
+      "summary": "AWS旗下Strands團隊周四（10/1）開源Strands Decider 2B決策模型，專門替AI代理人快速進行分類、工具選擇及安全判斷等工作。模型共有20億個參數，可直接在本機CPU或GPU執行，並以低延遲完成決策。AWS同步公開模型權重、訓練資料及訓練程式碼。"
+    },
+    {
+      "title": "Aurora PostgreSQL現可查詢S3資料湖，由DuckDB引擎負責Iceberg與Parquet分析",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179362",
+      "summary": "AWS將DuckDB分析引擎嵌入Aurora PostgreSQL，使其具備直接查詢資料湖的功能。開發者可從Aurora查詢Amazon S3中的Apache Iceberg與Parquet資料，再與資料庫內的交易資料一起處理，不必先把資料湖中的歷史資料複製進Aurora。"
+    },
+    {
+      "title": "BIGBANG前成員T.O.P認愛Nana　拍MV牽情緣",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020138.aspx",
+      "summary": "（中央社記者戴雅真東京2日專電）韓國男團BIGBANG前成員T.O.P與女團After School出身的演員Nana今天承認交往。兩人今年初因拍攝MV結緣，並於6月發展為戀人關係。Nana隨後透過粉絲互動平台親自回應，坦言有些害羞，但也大方表示，「我們會好好談一場美好、健康的戀愛！」"
+    },
+    {
+      "title": "F-16V blk70抵台　賴總統：投資國防就是投資和平",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020205.aspx",
+      "summary": "（中央社記者葉素萍台北2日電）總統賴清德今天表示，向美國採購的首批2架F-16V（blk70）戰機飛抵台灣，是提升台灣空防戰力的重要進展，也展現台灣強化自我防衛、以實力確保和平的決心。他強調，「投資國防，就是投資和平」。"
+    },
+    {
+      "title": "F1熱潮席捲馬來西亞　為賽車迷帶來難忘體驗",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020319.aspx",
+      "summary": "（中央社記者黃自強吉隆坡2日專電）F1巴林大獎賽移師馬來西亞雪邦國際賽道，賽車熱潮也延伸至吉隆坡及周邊地區。從地標國油雙峰塔的賽車主題活動，到結合文化與賽車元素的「2026繽紛飛馳嘉年華」，為車迷提供多元體驗。"
+    },
+    {
+      "title": "FBI聯手歐洲警方打擊勒索軟體組織KillSec，逮捕疑似主嫌的16歲少年",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179366",
+      "summary": "FBI與歐洲多國執法機關於9月30日展開KillSwitch行動，打擊勒索軟體組織Kill Security（簡稱KillSec）。"
+    },
+    {
+      "title": "G7會商壓低燃料價格　美國油價重挫5%",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aopl/202610020338.aspx",
+      "summary": "（中央社倫敦2日綜合外電報導）七大工業國集團（G7）領袖就降低燃料價格行動召開緊急會議進行協調，美國油價今天急劇下跌。歐洲聯盟稍早表示，將與國際能源總署（IEA）合作對全球市場釋出更多儲油。"
+    },
+    {
+      "title": "Gartner預測2030年部署面向公眾的AI服務的企業，有80%將經歷成本耗盡攻擊，致營運成本超額",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179365",
+      "summary": "9月15日在澳洲黃金海岸舉行的Gartner IT Symposium/Xpo大會期間，產業研究與顧問機構Gartner發布2027年暨未來核心策略預測，區分為三大類別：無所不在的機器人（robots everywhere）、由投入成本轉向創造價值（cost to value）、以及未知的未知（unknown unknowns）"
+    },
+    {
+      "title": "GitHub HydraFusion進入VS Code，AI可依任務自動安排多模型分工",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179345",
+      "summary": "GitHub擴大HydraFusion研究預覽範圍，除了原本的Copilot命令列工具，現在也於VS Code與GitHub Copilot應用程式提供。使用者可從Copilot模型選單選擇HydraFusion，不過，HydraFusion並非單一AI模型，而是一套協調模型工作的機制，會依照任務決定由一個模型直接處理，或讓多個模型接力完成並檢查結果。"
+    },
+    {
+      "title": "Meta推出主打小型企業用的Muse for Small Business",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179371",
+      "summary": "Meta推出高話題性的消費者AI助理Muse後，本週推出針對小型企業的Muse for Small Business，能幫小型店家處理行銷、行政或客戶服務等事務。\nMeta說明，小型企業主通常身兼數職，同時擔任會計、行銷、營運和客服等工作，無法專注於核心業務。而單純的聊天機器人無法解決複雜的商業問題，Muse for Small Business的目的就是成為企業的營運工具鏈的一環，了解小型企業目標、產品、客服問題及營運狀況，以提供AI自動化服務。"
+    },
+    {
+      "title": "OpenAI解雇3研究員　涉不當處理敏感資訊",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020122.aspx",
+      "summary": "（中央社舊金山2日綜合外電報導）ChatGPT開發商OpenAI今天表示，公司已解雇3名研究員，理由是他們涉嫌不當處理「敏感資訊」並違反公司規定，相關事件涉及一家評估人工智慧（AI）模型的外部機構。"
+    },
+    {
+      "title": "OpenAI調查失控AI代理人活動，已通知逾100個組織",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179368",
+      "summary": "OpenAI周三（9/30）公布AI代理人未對齊行為的最新調查進度，指出截至9月26日，已就相關異常活動通知超過100個組織，目前仍在持續回溯歷史紀錄，預期還會發現更多案例。\n這項調查源於OpenAI先前發現內部研究模型入侵Hugging Face的事件。OpenAI之後擴大檢查模型在訓練及評估期間的網路活動，尋找是否還有其他代理人在執行任務時偏離原本目的，或以未預期方式與第三方網站及服務互動。目前調查已進行約一個月，尚未發現其他事件的規模或嚴重程度達到Hugging Face事件。"
+    },
+    {
+      "title": "SpaceX太空船抵達國際太空站　創美國最快航程紀錄[影]",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020042.aspx",
+      "summary": "（中央社佛州卡納維爾角1日綜合外電報導）美國太空探索科技公司（SpaceX）太空船「優雅號」（Grace）今天與國際太空站完成對接，創下美國太空船前往國際太空站的最快航行紀錄；船上4名太空人將在太空站展開約6個月的任務。"
+    },
+    {
+      "title": "Tesla：已啟動在台FSD版本驗證　提出道路測試計畫",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020325.aspx",
+      "summary": "（中央社記者張良知台北2日電）特斯拉台灣公司（Tesla Taiwan）今天發布新聞稿指出，Tesla Taiwan 持續推動FSD（S）輔助駕駛系統在台落地的申請程序，已於近日召開的技術審查會議中，提出道路測試計畫架構，後續將配合審查意見作相關準備。"
+    },
+    {
+      "title": "【資安日報】10月2日，臺北市政府網站發生服務中斷事件，起因為跳電後機房過熱造成儲存設備關閉",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179374",
+      "summary": "本日新聞焦點\n● OpenAI調查失控AI代理人活動，已通知逾100個組織\n● FBI與歐洲警方打擊勒索軟體組織KillSec，逮捕疑似主嫌的16歲少年\n● 中國駭客鎖定臺灣學界與智庫，仿Gmail附件預覽及政府文件為誘餌"
+    },
+    {
+      "title": "【資安週報】0929~1002，臺灣8月勒索軟體事件20起居亞太第三，全球聚焦AI代理安全風險與防護布局",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179381",
+      "summary": "本週資安威脅焦點集中於勒索軟體與企業資安事件，近期統計顯示，臺灣8月至少發生20起勒索軟體事件，也有多家上市櫃公司發布資安重訊，包括柏文、神腦與鈊象等，華碩也傳出通知部分線上商店客戶資料可能遭未授權存取的情形，顯示企業遭受攻擊與資料外洩風險仍持續升高。此外，針對網路、端點與應用程式漏洞的攻擊接連曝光，成為另一項值得關注的威脅動向。"
+    },
+    {
+      "title": "世衛：2023年全球平均餘命73.3歲　近COVID疫情前",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aopl/202610020351.aspx",
+      "summary": "（中央社日內瓦2日綜合外電報導）世界衛生組織（WHO）今天表示，全球平均餘命已經接近COVID-19（2019冠狀病毒疾病）疫情之前的水準，但健康餘命恢復速度較為緩慢。"
+    },
+    {
+      "title": "中職》富邦悍將壓力很大打得很認真 葉總：對備戰總冠軍賽很有幫助",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://sports.ltn.com.tw/news/breakingnews/5593818",
+      "summary": "味全龍今天在新莊打到延長賽以2：1險勝富邦悍將，總教練葉君璋表示，在總冠軍賽前能夠經歷這種高張力的比賽氣氛，對球隊是很有幫助的經驗，但梅賽鍶為拚勝投王用116球創生涯單場...…"
+    },
+    {
+      "title": "乖乖中壢廠工會發動罷工　公司：將持續協商",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020212.aspx",
+      "summary": "（中央社記者葉臻桃園2日電）乖乖中壢廠企業工會今天正式發動罷工，員工不排除到高雄找董事長陳情。乖乖公司表示遺憾，但尊重員工權益，將持續協商；桃園市勞動局表示，尊重勞方權益訴求，盼資方儘快與工會協商。"
+    },
+    {
+      "title": "乖乖中壢廠罷工升級為無限期　公司盼續協商",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020276.aspx",
+      "summary": "（中央社記者葉臻桃園2日電）乖乖中壢廠企業工會今天發動罷工，並開會將「1天警告性罷工」改為無限期；乖乖股份有限公司說，已加薪5%，保證遷廠前2年不裁員，2年後資遣8個月資遣費，希望工會繼續協商。"
+    },
+    {
+      "title": "九州博弈洗錢案一審宣判　總裁陳政谷判11年8月",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020200.aspx",
+      "summary": "（中央社記者蘇木春台中2日電）遭控涉洗錢案的九州博弈集團總裁陳政谷、前台灣電子競技聯盟董事長徐培菁被台灣台中地方檢察署依貪污等罪起訴，台中地院審理後今天一審判兩人各11年8月、7年，全案仍可上訴。"
+    },
+    {
+      "title": "五大科技巨頭主動型Agent大比較，一張表告訴你Dots、Muse和Spark有何不同",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179380",
+      "summary": "主動型Agent助理產品大爆發。從今年5月開始，多家科技巨頭陸續跨進主動型Agent市場，到了8、9月更進入密集推出期，大廠紛紛推出了主打24小時全天候運作的AI Agent，在沒有新的提示指令下持續執行。\n年初全球爆紅的OpenClaw（龍蝦），掀起了新一波AI代理的熱潮。相較於過去多半依據使用者指令行動的Agent，OpenClaw可以持續運作、定期執行任務，甚至在沒有持續提示的情況下主動完成工作，讓Agent從一次性任務執行，進一步發展為長時間、持續自主運作的模式。"
+    },
+    {
+      "title": "亞運張筑涵越野激流奪銀　續寫連4屆登頒獎台紀錄",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020182.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞運輕艇激流女將張筑涵，昨天女子個人K艇以第4名作收、無緣登上頒獎台，所幸今天在越野激流摘下銀牌彌補遺憾，同時達成生涯連4屆亞運奪牌壯舉。（編輯：龍柏安）1151002"
+    },
+    {
+      "title": "亞運張筑涵越野激流摘銀　笑稱手滑被槳葉打醒",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020245.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞運輕艇激流女將張筑涵今天在越野激流摘下銀牌，連4屆亞運登上頒獎台，她笑說，比賽時手滑掉槳葉打到眼角，讓她瞬間清醒，也走出昨天無緣奪牌難過情緒。"
+    },
+    {
+      "title": "亞運拳擊林郁婷摘金　跆拳道洪俊義奪銀寫男子隊史紀錄",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020334.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞運台灣代表團今天獎牌大有斬獲，女子拳擊好手林郁婷摘下60公斤級金牌，而跆拳道好手洪俊義則拿到80公斤級銀牌，寫下男子隊史暌違12年晉級金牌戰。"
+    },
+    {
+      "title": "亞運男子高爾夫　王偉軒落後1桿最終回合拚金牌",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020194.aspx",
+      "summary": "（中央社記者黎建忠名古屋2日電）名古屋亞運高爾夫賽事今天進行的男子第3回合，「台灣重砲」王偉軒抓4博蒂、吞2柏忌繳出68桿，以3天低於標準桿11桿的199桿、暫並列第2，僅落後領先者1桿，很有機會拚金牌。"
+    },
+    {
+      "title": "亞運網球女雙台灣金包銀　謝淑薇梁恩碩拚詹皓晴吳芳嫺",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020223.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞洲運動會網球選手謝淑薇今天與「小鋼炮」梁恩碩在女子雙打4強戰勝出，挺進金牌戰，更將與選手詹皓晴及吳芳嫺上演「台灣內戰」，台灣代表隊也確定包辦金、銀牌。"
+    },
+    {
+      "title": "亞運網球謝淑薇攜手曾俊欣　混雙4強止步奪銅",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020290.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞洲運動會網球選手謝淑薇與曾俊欣今天拚戰混雙4強戰，可惜終場以1比6、7比6（8比6）、5比10敗給地主組合柴原瑛菜和佛蘭德（Jay Friend），以銅牌作收。"
+    },
+    {
+      "title": "亞運跆拳道洪俊義勝出　男子隊史暌違12年再闖金牌戰",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020281.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞洲運動會跆拳道選手洪俊義今天在男子80公斤級4強戰首回合遭判定落敗後，接連以11比0、7比5擊敗哈薩克好手托列烏加利，男子隊史暌違12年再闖金牌戰。"
+    },
+    {
+      "title": "亞運跆拳道洪俊義奪銀　男子隊史12年來第1人",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020299.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞洲運動會跆拳道23歲選手洪俊義今天在男子80公斤級金牌戰，面對烏茲別克好手賈伊蘇諾夫，關鍵第3回合遭逆轉，拿下銀牌，締造男子隊史12年來第1人紀錄。"
+    },
+    {
+      "title": "亞運跆拳道洪俊義離金牌僅差3秒　有遺憾但已盡力",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020320.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞運跆拳道好手洪俊義今天摘下男子80公斤級銀牌，不過其實距離金牌僅有3秒之差，生涯首拚亞運留下些許遺憾，但他自認已經盡力，未來會繼續努力。"
+    },
+    {
+      "title": "亞運跆拳道王薇嘉摘銅　教練負面心法激勵",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020296.aspx",
+      "summary": "（中央社記者陳容琛名古屋2日電）名古屋亞運跆拳道女將王薇嘉今天在女子67公斤級4強戰，以3比14、5比7不敵伊朗好手莫拉迪，雖然無緣晉級金牌戰，但仍獲銅牌，總教練蘇泰源笑說「負面心法」奏效。"
+    },
+    {
+      "title": "交通罰鍰專款專用回歸道安與執法　最快117年實施",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020207.aspx",
+      "summary": "（中央社記者黃巧雯台北2日電）交通部今預告修法，未來直轄市與縣（市）政府獲配交通違規罰鍰收入，法定提撥比率由至少12%，改全數專款專用，預計每年挹注逾200億元用於交通安全改善與執法，最快117年實施。"
+    },
+    {
+      "title": "交通部提罰鍰回歸道安與執法　民眾黨團：持續修法",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020261.aspx",
+      "summary": "（中央社記者曾以寧台北2日電）交通部今天表示，交通罰鍰專款專用回歸道安與執法，最快117年實施。民眾黨團表示，交通部版本仍容許罰鍰收入拿去購買科技執法設備，與民眾黨所提公投背道而馳，將持續推動修法。"
+    },
+    {
+      "title": "今年前8月遭利用漏洞數超越2025全年，N-day漏洞利用明顯增加",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179326",
+      "summary": "Google旗下威脅情報團隊GTIG分析2025年初至2026年8月底的漏洞趨勢，指出2026年揭露及實際遭利用的漏洞都明顯增加。AI已開始被用於協助尋找漏洞，不過開源生態系中的自動化CVE編號指派機制，也會推高漏洞揭露數量。攻擊者也可能利用AI分析產品版本差異、修補及漏洞資訊，更快將已知漏洞用於攻擊。"
+    },
+    {
+      "title": "今彩539第115239期　頭獎1注中獎",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020347.aspx",
+      "summary": "（中央社台北2日電）今彩539第115239期開獎，中獎號碼34、38、30、24、13；派彩結果，頭獎1注中獎，獎金新台幣800萬元。"
+    },
+    {
+      "title": "今彩539第115239期開獎",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020317.aspx",
+      "summary": "（中央社台北2日電）今彩539第115239期開獎，中獎號碼34、38、30、24、13。3星彩中獎號碼160，4星彩中獎號碼5978。"
+    },
+    {
+      "title": "保瑞集團與好市多深化合作　布局北美保健品市場",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020311.aspx",
+      "summary": "（中央社記者何秀玲台北2日電）保瑞藥業旗下晨暉生技今年收購美國運動保健營養品牌威德，取得在美國好市多等通路資源。晨暉表示，威德近日參與好市多公益活動，除深化雙方長期合作關係，未來將整合集團研發及產品開發能力，規劃新品，布局北美保健營養市場。"
+    },
+    {
+      "title": "健康飲食競賽　芹菜全食物利用推惜食、原民風味餐展文化",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020213.aspx",
+      "summary": "（中央社記者陳至中台北2日電）教育部今天在成功大學舉辦第5屆健康飲食小主播創意競賽，入圍作品有透過「芹菜全食物利用」推廣惜食觀念，也有從原住民族風味餐出發，介紹飲食智慧和文化。"
+    },
+    {
+      "title": "傳下令禁止藍委幫邱臣遠站台　鄭麗文：完全斷章取義",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020197.aspx",
+      "summary": "（中央社記者王承中台北2日電）傳國民黨主席鄭麗文下令禁止藍委替民眾黨竹北市長參選人邱臣遠站台，鄭麗文今天表示，這完全是斷章取義。對於國民黨立委徐巧芯稱「徐欣瑩是同意的，只有鄭麗文反對」，這並不是事實。呼籲大家盡量不要幫參選人發言，有時可能跟事實有落差。"
+    },
+    {
+      "title": "全球平均餘命只差疫情前0.1歲 世衛：健康餘命恢復較慢",
+      "date": "2026-10-02",
+      "category": "健康",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/world/breakingnews/5593813",
+      "summary": "世界衛生組織（WHO）今天表示，全球平均餘命已經接近COVID-19（2019冠狀病毒病）疫情之前的水準，但健康餘命恢復速度較為緩慢。\n\nWHO年度全球衛生估計報告指出，2023年全球平...…"
+    },
+    {
+      "title": "全端框架SvelteKit 3整理開發工具鏈，舊專案升級需更新設定與工具版本",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179377",
+      "summary": "Svelte團隊正式發布全端應用框架SvelteKit 3，新版調整專案設定方式，將SvelteKit相關設定集中到Vite設定檔，同時提高開發工具的最低版本要求，包括採用TypeScript 6與建置工具Vite 8。官方也提供自動遷移工具，協助既有專案升級。"
+    },
+    {
+      "title": "出席同濟會交接　蕭副總統：民間默默付出展現社會韌性",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020259.aspx",
+      "summary": "（中央社記者蘇木春台中2日電）副總統蕭美琴今天到台中出席國際同濟會台灣總會活動，她說，同濟會長期以兒童以及社會服務為核心理念、向下扎根，在基層默默付出，是台灣安定、進步的力量，這就是社會韌性。"
+    },
+    {
+      "title": "加州禁止AI自行決定解僱員工，成全美首例",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179367",
+      "summary": "美國加州州長Gavin Newsom周三（9/30）簽署SB 947，禁止雇主完全依賴AI或自動化決策系統，決定對員工採取懲戒或解僱措施，要求這類重大人事決策必須有人類參與審查，成為全美首個禁止雇主完全依賴AI做出懲戒或解僱決定的州別。"
+    },
+    {
+      "title": "助跑車協會成立推運動平權　前運動部次長鄭世忠任理事長",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020183.aspx",
+      "summary": "（中央社台北2日電）為積極推動國際新興的適應運動並落實「運動平權」核心價值，國立體大攜手國內身障團體與產業製造商，今天宣布成立中華民國助跑車協會，前運動部次長鄭世忠則成為首屆理事長。"
+    },
+    {
+      "title": "勞動部次長黃玲娜出席NAGLO年會　深化與美方交流",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020211.aspx",
+      "summary": "（中央社記者吳欣紜台北2日電）勞動部今天表示，勞動部次長黃玲娜於美國時間9月30日出席在美國舉行的美國勞工行政官員協會（NAGLO）2026年年會並致詞，與美國各州勞工行政官員及代表交流。"
+    },
+    {
+      "title": "北市信義區民宅火警撲滅　無人受傷起火原因待查",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020331.aspx",
+      "summary": "（中央社記者劉建邦台北2日電）台北市信義區光復南路巷弄一棟公寓今晚發生火警，消防局獲報後派出大批人車趕赴現場，晚上近8時撲滅火勢，起火地點位於公寓2樓，無人受傷，詳細起火原因待調查釐清。"
+    },
+    {
+      "title": "北市富邦人壽喋血案　犯嫌遭聲押禁見",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020349.aspx",
+      "summary": "（中央社記者林長順台北2日電）台北市中山區富邦人壽建北大樓9月21日發生持刀傷人案，黃姓嫌疑人持水果刀攻擊洪姓業務員，兩人均送醫治療。黃嫌今天出院，警方調查有訴訟糾紛，依殺人未遂罪移送北檢。檢察官聲請羈押禁見。"
+    },
+    {
+      "title": "北市錦州公宅頂樓火警　新工處：工人抽菸釀禍",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020278.aspx",
+      "summary": "（中央社記者劉建邦台北2日電）台北市錦州街公共住宅B棟屋頂昨天發生火警，新工處指出，經施工廠商調閱監視器畫面確認是施工人員清潔後在植栽箱前抽菸釀火警，後續將依契約規定處置施工廠商或監造單位。"
+    },
+    {
+      "title": "卓榮泰分享洋流船員證遭質疑　政院：未涉公務也無違法",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020337.aspx",
+      "summary": "（中央社記者賴于榛台北2日電）國民黨立委王鴻薇今天質疑行政院長卓榮泰在立法院分享民進黨台北市長參選人沈伯洋的「洋流船員證」，有違法之虞。行政院晚間指出，卓榮泰是在休息時間與個別立法委員分享私人手機的待機畫面設定，無涉公務事項無涉，也無違反選罷法。"
+    },
+    {
+      "title": "台日合製電影入選東京影展主競賽　台灣特集展映5片",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020260.aspx",
+      "summary": "（中央社記者戴雅真東京2日專電）第39屆東京國際影展將於10月26日至11月4日在東京日比谷、有樂町、丸之內及銀座地區舉行，預計放映204部電影。台日共同製作、池田曉執導的「我親愛的怪孩子」入選主競賽單元，「台灣電影文藝復興2026」特集則精選「幸福快樂的日子」、「恨女的逆襲」等5部作品。"
+    },
+    {
+      "title": "台灣研發智控無人船聯邦式學習 高雄外海測試成功",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020129.aspx",
+      "summary": "（中央社記者洪學廣高雄2日電）國內自主研發結合「AI巡航」與「聯邦式學習」創新技術，近期在高雄港外海成功完成中大型無人船自主巡航與智慧化驗證，不僅突破海事數據保密難題，更為智慧海洋治理寫下嶄新一頁。"
+    },
+    {
+      "title": "台灣贈菲律賓「金門艦」正式服役　維護菲南航運安全",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020345.aspx",
+      "summary": "（中央社記者林行健馬尼拉2日專電）經由菲律賓非營利基金會贈予菲律賓海岸防衛隊的台灣海巡署除役巡防救難艦「金門艦」，今天正式在菲律賓南部服役，主要任務是維護民答那峨島周邊航運路線及海洋環境的安全。"
+    },
+    {
+      "title": "台美GCTF工作坊紐西蘭登場　聚焦太平洋災害管理",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020184.aspx",
+      "summary": "（中央社記者楊堯茹台北2日電）台美首次在紐西蘭共同舉辦「全球合作暨訓練架構」（GCTF）工作坊，聚焦太平洋災害管理。駐紐西蘭代表歐江安於開幕式表示，台灣與印太夥伴交流防災經驗，共同提升災害應變能力；美國駐紐西蘭大使館臨時代辦柯旺肯定台灣是災害韌性典範。"
+    },
+    {
+      "title": "台美中關係與東亞局勢研討　學者齊聚國家圖書館",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020206.aspx",
+      "summary": "（中央社記者林長順台北2日電）「2026年台美中關係與東亞局勢」學術研討會今天在國家圖書館登場，國內外專家學者探討美中戰略競爭、台海情勢、區域安全及地緣政治變化，深入分析當前台美中關係與東亞局勢發展。"
+    },
+    {
+      "title": "台股本週上漲451點　上市公司總市值158.56兆創新高",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020282.aspx",
+      "summary": "（中央社記者曾仁凱台北2日電）台股本週攻高上漲451.14點或0.94%，週五集中市場指數以48475.74點作收，創收盤指數新高。根據台灣證券交易所統計，上市公司總市值達新台幣158兆5593億元，較上週再增加約1.48兆元，同步登頂。"
+    },
+    {
+      "title": "台船第2艘高緯度遠洋巡護船安龍　海上巡弋可達30天",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020302.aspx",
+      "summary": "（中央社記者吳家豪台北2日電）台船公司今天在高雄廠舉行海巡署「高緯度遠洋巡護船6艘設計建造統包案」第2艘安龍儀式，預祝建造案順利圓滿完成；新型巡護船滿載排水量約5000噸，具備油電混合推進系統與長達30天以上的海上巡弋能力，全案預計於2026年至2031年間分批交船。"
+    },
+    {
+      "title": "台韓藝術家共展 台北當代藝術館聚焦超高齡社會議題",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/acul/202610020309.aspx",
+      "summary": "（中央社記者王寶兒台北2日電）人口老化是全球關注議題，台北當代藝術館攜手韓國釜山文化財團推出「當未來不再被紀念」展，展覽也從超高齡社會談起，由台韓藝術家以作品反映兩地民眾面對同樣課題下的不同故事。"
+    },
+    {
+      "title": "司法矯正人力　卓榮泰：支持增加預算員額",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020196.aspx",
+      "summary": "（中央社記者曾以寧台北2日電）台灣民眾黨立委陳昭姿今天質詢基層司法人力不足問題，行政院長卓榮泰指出，目前預算員額則僅13多萬人，尚未達法定員額，自己支持增加預算員額，但認為不須要修總員額法。"
+    },
+    {
+      "title": "名古屋亞運台灣隊賽程最終日　網球女雙金包銀、高爾夫爭金",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020318.aspx",
+      "summary": "（中央社記者黎建忠名古屋2日電）2026年名古屋亞運台灣代表隊明天進入最後一天賽事，網球女雙謝淑薇/梁恩碩、詹皓晴/吳芳嫺攜手挺進決賽，提前金包銀；男子高爾夫王偉軒穩居領先群，有望再添金牌。"
+    },
+    {
+      "title": "名古屋亞運陳念琴惜敗奪銀　苦笑大喊：好想要金牌",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020258.aspx",
+      "summary": "（中央社記者黎建忠名古屋2日電）名古屋亞運今天進行女子拳擊65公斤級金牌戰，台灣好手陳念琴面對印度的胡達，雙方經過3回合激戰，陳念琴仍以2比3惜敗拿下銀牌。賽後她不甘心地說：「好想要金牌啊。」"
+    },
+    {
+      "title": "吳奇隆臨時取消開球　悍將球團：身體不適",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020186.aspx",
+      "summary": "（中央社記者蘇志畬台北2日電）藝人吳奇隆原訂4日現身新莊棒球場，擔任富邦悍將主場開球嘉賓，不過球團今天臨時宣布，吳奇隆因身體不適取消原訂開球活動。"
+    },
+    {
+      "title": "國民黨團提普發現金2萬元　立法院會付委審查",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020225.aspx",
+      "summary": "（中央社記者林敬殷台北2日電）總統賴清德8月17日宣布明年普發現金新台幣1萬元，國民黨立法院黨團加碼至2萬元，並提出「全民共享經濟成果及穩定民生特別條例草案」，以及行政院所提116年度中央政府總預算案、115年度中央政府總預算追加預算案，都在今天立法院會一讀付委審查。"
+    },
+    {
+      "title": "圖輯》沈伯洋師大夜市拜票 「洋流」再度襲捲深藍選區",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593814",
+      "summary": "台北市長參選人沈伯洋人氣居高不下，所到之處吸引大批支持者追隨，「洋流」波濤洶湧。他今晚再次挺進深的的大安區，到師大夜市掃街拜票，「洋流」將夜市擠得水洩不通，店家直呼幾十年都沒看...…"
+    },
+    {
+      "title": "基隆暫置場火災2處火點且留柴油　市府疑非自然因素",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020171.aspx",
+      "summary": "（中央社記者王朝鈺基隆2日電）基隆市天外天焚化廠暫置場堆放1700床廢棄彈簧床，日前起火燃燒。市府今天表示，現場2處起火點相距15至20公尺，且留有以容器盛裝的柴油，疑為非自然因素引發火災，將報請基隆地檢署偵辦。"
+    },
+    {
+      "title": "報告揭OpenAI代理擅闖政府網站　試圖抹除活動軌跡",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020139.aspx",
+      "summary": "（中央社舊金山1日綜合外電報導）根據今天發布的一份報告，OpenAI開發的人工智慧（AI）代理在未經授權入侵政府網站後，試圖抹除活動痕跡。"
+    },
+    {
+      "title": "外交部發布國慶影片「國家的相簿」　呈現台灣民主歷程[影]",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020346.aspx",
+      "summary": "（中央社記者楊堯茹台北2日電）外交部今天發布雙十國慶影片「國家的相簿」，首度以AI結合歷史畫面與真人訪談來呈現；且今年適逢總統直選30週年，影片以退伍軍人視角回望台灣民主化歷程、近年台灣立足國際舞台的身影，以及由苦難與榮譽交織的記憶所塑造的最獨特「Team Taiwan」精神。"
+    },
+    {
+      "title": "大樂透第115093期開獎",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020314.aspx",
+      "summary": "（中央社台北2日電）大樂透第115093期今晚開獎。中獎號碼為26、47、20、14、40、04，特別號42。"
+    },
+    {
+      "title": "大樂透頭獎連7槓　下期獎金上看2.7億元",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020344.aspx",
+      "summary": "（中央社台北2日電）大樂透第115093期今晚開獎。中獎號碼為26、47、20、14、40、04，特別號42；派彩結果，頭獎、貳獎都槓龜。大樂透頭獎連7槓，下期（6日）預估銷售新台幣1.6至1.8億元，頭獎累積金額上看2.7億元。"
+    },
+    {
+      "title": "婦涉每票千元為嘉市議員參選人買票　遭收押禁見",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020149.aspx",
+      "summary": "（中央社記者姜宜菁嘉義市2日電）陳賴姓婦人為使某嘉義市議員參選人當選，以1票新台幣1000元為代價要求選民支持，台灣嘉義地方檢察署昨天傳喚陳賴姓婦人等到案，以有勾串之虞向法院聲請羈押禁見婦人獲准。"
+    },
+    {
+      "title": "小額欠費詐騙頻傳　刑事局籲防信用卡盜刷",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020285.aspx",
+      "summary": "（中央社記者劉建邦台北2日電）刑事局今天表示，詐騙集團近期以小額欠費等理由，如「停車費120元尚未繳納」誆騙民眾，統計1月至9月27日，類似詐騙案401件，總財損1764萬餘元，提醒民眾防範信用卡盜刷。"
+    },
+    {
+      "title": "布達佩斯論壇登場　賴怡忠：歐洲應更關注台海安全",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aopl/202610020308.aspx",
+      "summary": "（中央社記者劉郁葶布達佩斯2日電）一年一度的布達佩斯論壇1日登場，台海安全也是討論焦點之一。遠景基金會執行長賴怡忠指出，台海安全不只是亞洲的區域議題，也與歐洲自身的安全、民主價值及地緣政治利益密切相關，歐洲應更積極關注台海情勢。"
+    },
+    {
+      "title": "從移民少女到AI教母　李飛飛走進超微技術核心",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020048.aspx",
+      "summary": "（中央社記者林宏翰洛杉磯1日專電）「AI教母」李飛飛將出任超微首席科學家。現年50歲的她，在中國出生長大，母親家族與「反共的國民黨」有關連，她15歲到美國時幾乎不會講英文，如今與黃仁勳、蘇姿丰並列為AI時代重量級人物。"
+    },
+    {
+      "title": "微軟推出首款自研即時串流語音轉錄模型，並更新MAI語音模型",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179375",
+      "summary": "微軟AI部門Microsoft AI（MAI）周四（10/1）推出首款自研即時串流語音轉錄模型MAI-Transcribe-2-Streaming，支援60種語言及持續自動語言偵測，收到音訊後約100毫秒即可開始輸出初步轉錄內容。同一天微軟也更新文字轉語音模型MAI-Voice系列，推出MAI-Voice-2.1及低延遲版本MAI-Voice-2.1-Flash。"
+    },
+    {
+      "title": "悍將關鍵戰排蔡袁華辰先發　後藤光尊盼帶來不同氣氛",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020264.aspx",
+      "summary": "（中央社記者蘇志畬台北2日電）中華職棒富邦悍將隊在爭取季後賽門票的關鍵之戰，讓新人蔡袁華辰扛起先發游擊，展現大膽調度，總教練後藤光尊表示，期待他為球隊帶來不同氣氛，而現況也的確缺少游擊手。"
+    },
+    {
+      "title": "招待電影、發現金及生活禮包涉賄選　新北檢起訴3里長參選人",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020238.aspx",
+      "summary": "（中央社記者曹亞沿新北2日電）新北地檢署強力查賄，近日陸續查獲板橋、中和、新莊3名里長參選人，分別涉及招待選民免費看電影、在老人共餐活動發百元現金，及贈送生活用品禮包，3人均依違反選罷法起訴。"
+    },
+    {
+      "title": "斗六市長遭控涉違選罷法　雲檢分案調查",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020247.aspx",
+      "summary": "（中央社記者姜宜菁雲林縣2日電）民進黨雲林縣斗六市長參選人尹令瑛今天到雲林地檢署控告斗六市長林聖爵，公所辦理鄰長研習活動涉違反選罷法和政府採購法；雲林地檢署分案調查，林聖爵強調禁得起檢視。"
+    },
+    {
+      "title": "新加坡葡萄酒週　台灣首位國際侍酒大師盧楷文任評審",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020298.aspx",
+      "summary": "（中央社記者吳昇鴻新加坡2日專電）新加坡葡萄酒週系列活動今天登場，台灣出身的國際侍酒師盧楷文擔任評審、與國際專家交流。盧楷文繼米其林最佳侍酒師、亞洲50最佳餐廳的亞洲最佳侍酒師頭銜後，取得國際侍酒大師公會認證中的最高資格「侍酒大師」，是台灣第一人。"
+    },
+    {
+      "title": "新竹棒球場高檢署駁回再議　林智堅不起訴確定",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020321.aspx",
+      "summary": "（中央社記者林長順台北2日電）新竹地檢署偵辦新竹市立棒球場工程案，今年8月間認定前新竹市長被控圖利罪罪嫌不足，予不起訴處分。竹檢依職權提起再議。台灣高檢署今天駁回再議，林智堅不起訴確定。"
+    },
+    {
+      "title": "日本女星福原遙閃電宣布結婚　對象為國腳久保建英",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020316.aspx",
+      "summary": "（中央社東京2日綜合外電報導）日本足球代表隊球員久保建英與知名演員福原遙今天分別透過個人Instagram宣布已經結婚。據相關人士透露，福原遙目前沒有懷孕，今後也會繼續在日本工作。"
+    },
+    {
+      "title": "日本配音員坂東尚樹享壽69歲　妖怪手錶、一拳超人幕後獻聲",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020126.aspx",
+      "summary": "（中央社東京2日綜合外電報導）曾為知名動畫「妖怪手錶」的機器喵等角色配音的日本資深聲優坂東尚樹於9月28日逝世，享壽69歲。其所屬經紀公司Production Ace今天在官方網站公布消息。"
+    },
+    {
+      "title": "時速36公里為航海王創作片尾曲　曝曾吵到差點拆夥",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020283.aspx",
+      "summary": "（中央社記者王心妤台北2日電）日本樂團「時速36公里」獲邀為人氣動畫「航海王：艾爾帕布篇」創作片尾曲。他們受訪透露其實出道前曾吵到有人想退團，後來花了14個小時才說開，也期待12月來台感受樂迷能量。"
+    },
+    {
+      "title": "東元投資不超過12.71億元　擴新加坡和印尼據點",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020335.aspx",
+      "summary": "（中央社記者鍾榮峰台北2日電）電機大廠東元積極布局東南亞市場，今天晚間公告董事會決議，以不超過新台幣12.71億元（約4000萬美元），成立新加坡合資公司及設立印尼變壓器工廠。"
+    },
+    {
+      "title": "東北季風報到　宜蘭山區大台北花蓮防大雨",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020355.aspx",
+      "summary": "（中央社台北2日電）中央氣象署發布豪雨特報，東北季風影響，易有短延時強降雨，今晚至明天宜蘭縣山區有局部大雨或豪雨，大台北、宜蘭、花蓮地區有局部大雨發生的機率，請注意雷擊及強陣風，山區請慎防坍方及落石，低窪地區請慎防積水。（編輯：陳正健）1151002"
+    },
+    {
+      "title": "東檢偵辦里長候選人涉嫌送米賄選 依法聲請羈押",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/society/breakingnews/5593819",
+      "summary": "台東地檢署日前獲報，台東市某里長候選人涉嫌向具投票權之選民致贈白米等禮品，涉嫌違反公職人員選舉罷免法，檢察長蕭方舟極為重視，立即指派檢察官康舒涵指揮台東縣警察局偵辦。\n\n檢...…"
+    },
+    {
+      "title": "林佳龍晉見瓜地馬拉總統　盼創造台美瓜三方合作契機",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020312.aspx",
+      "summary": "（中央社記者楊堯茹台北2日電）外交部長林佳龍率企業團訪瓜地馬拉，晉見瓜地馬拉總統阿雷瓦洛，代表賴總統感謝瓜地馬拉堅定支持台灣國際參與，盼實際行動為台美瓜三方創造合作契機；另會晤瓜國外交部長馬蒂內茲，馬蒂內茲於會後聲明肯定兩國92年邦誼歷久彌新。"
+    },
+    {
+      "title": "林保署嘉義分署辦員工射擊訓練　精進移除外來種能力",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020193.aspx",
+      "summary": "（中央社記者蔡智明嘉義縣2日電）在林業保育署工作也要具備槍枝射擊技能。林保署嘉義分署日前聘請專家授課，精進員工霰彈槍及高動能空氣槍射擊能力與相關知識，執行外來種埃及聖䴉及綠鬣蜥移除工作。"
+    },
+    {
+      "title": "案件太多、敏感卷證又不能上商用AI，法務部啟動三年主權AI計畫",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179379",
+      "summary": "「案件這麼多，又不讓我用AI，要我怎麼辦？」時任法務部綜合規劃司副司長古慧珍在8月底數位政府高峰會上，用這句第一線同仁可能的抱怨，點出法務部推動AI的兩難：檢察官、觀護人需要工具幫忙整理資料和文書，但卷宗內有個資、案情和偵查脈絡，不能直接上傳到商用AI。\n法務部的解法是，要用三年時間建立自己的三層式主權AI平臺：底層共用算力與資料湖，中層提供法務專屬大型語言模型推論系統，上層則是自主開發的AI助理應用。今年，這項計畫先選定代表性場域、展開試驗，明年則進入推廣期，要逐步擴增本土司法語料庫和實務案例，2028年預計擴大規模、形成持續演進的法務AI生態系。"
+    },
+    {
+      "title": "樂天銀行新任董事長　許柏林出任",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020288.aspx",
+      "summary": "（中央社記者蘇思云台北2日電）國票金今天代子公司樂天商業銀行公告，董事會通過新任董事長人選為許柏林，即日起生效。許柏林過去曾在華南銀行體系多年，也曾擔任純網銀將來銀行總經理。"
+    },
+    {
+      "title": "歐盟呼籲G7共同合作  反對美柴油出口禁令威脅",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aopl/202610020340.aspx",
+      "summary": "（中央社布魯塞爾2日綜合外電報導）美國施壓歐洲釋出戰略儲備，以壓低燃料價格之際，歐洲聯盟（EU）今天強烈反對美國實施柴油出口禁令的威脅，並呼籲七大工業國集團（G7）採取共同行動。"
+    },
+    {
+      "title": "沈伯洋自己想出「大洋流計畫」 船員證揭：支持度與民調非常相近",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593788",
+      "summary": "年底台北市長選戰白熱化，民進黨參選人沈伯洋近日發起「大洋流計畫」，上線1天登錄人數就突破10萬。對此，政治工作者周軒在政論節目《台灣最前線》指出，這個點子是沈伯洋自己想出來的，在...…"
+    },
+    {
+      "title": "法律白話文批蔣萬安「問A答B」 網友讚：說出台北市民心聲",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593825",
+      "summary": "人氣Podcast節目「法律白話文」發布影片，探討台北市長選舉「沈伯洋能不能贏蔣萬安」，有網友在社群平台PO出節目片段，大讚法律白話文2名主持人批評蔣萬安，說出台北市民的心聲，引...…"
+    },
+    {
+      "title": "海線獲贈「繫上紅緞帶」甘蔗！何欣純拚倒吃甘蔗、節節高升",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593820",
+      "summary": "民進黨台中市長參選人、立委何欣純今晚間在大安松雅保安宮與市議員施志昌成立大安後援會，兩人均獲贈近來最夯吉祥物「繫上紅色緞帶的甘蔗」，「海線媳婦」何欣純開心接下將甘蔗高舉過頭，盼...…"
+    },
+    {
+      "title": "海關：報關申報不實商標　最高可罰300萬元",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020284.aspx",
+      "summary": "（中央社記者高華謙台北2日電）財政部關務署高雄關今天說，近期發現部分業者報運貨物出口時，誤將甲商標申報為乙商標，或將商標申報為無商標等商標申報不實情形，違反貿易法及貨品輸出管理辦法規定，嚴重者恐面臨最高新台幣300萬元罰鍰，甚至廢止進出口廠商登記。"
+    },
+    {
+      "title": "澎湖砂石車衝撞鐵皮屋　駕駛受困獲救",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020095.aspx",
+      "summary": "（中央社澎湖縣2日電）澎湖湖東村道上今天發生一起砂石車衝撞鐵皮屋事故，黃姓駕駛受困車內，警消人員搶救後順利脫困，幸未波及無辜，肇事原因待警方調查釐清。"
+    },
+    {
+      "title": "澎湖輪安平馬公觀光試航　開啟海島觀光新里程",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020216.aspx",
+      "summary": "（中央社澎湖縣2日電）主要行駛高雄港與澎湖馬公港之間的澎湖輪，今天首次完成「安平－馬公」觀光試辦航班，載來520位國內遊客，開啟台南與澎湖海島觀光串聯新里程。"
+    },
+    {
+      "title": "爆蔣萬安市府廣場蓋風水池！張益贍：難道要替自己改運？",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5593812",
+      "summary": "年底選戰進入白熱化，台北市長蔣萬安近日卻陷入許多爭議。前民眾黨中央委員張益贍在政論節目《台灣最前線》爆出，蔣萬安10月開始要在市府廣場蓋一座風水池，還要把市府路封閉近2年，質疑難...…"
+    },
+    {
+      "title": "田馥甄聽AI唱新歌受挫落淚　12月唱6場破個人紀錄",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020274.aspx",
+      "summary": "（中央社記者王心妤台北2日電）歌手田馥甄推出新專輯「要去什麼地方」，將於12月破個人紀錄舉辦6場演唱會。她今天受訪分享製作過程，曾因為聽AI演唱新歌Demo帶感到挫折，擔心唱得比AI不好而落淚。"
+    },
+    {
+      "title": "男涉下注選舉賭盤　支付公庫10萬元南檢緩起訴",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020273.aspx",
+      "summary": "（中央社記者楊思瑞台南2日電）郭姓男子涉透過網路連線到境外去中心化預測平台，以虛擬貨幣下注台北市長選舉賭盤，台南地檢署檢察官偵結考量郭姓男子繳回犯罪所得予緩起訴，須向公庫支付新台幣10萬元。"
+    },
+    {
+      "title": "疑加碼生育津貼涉現金賄選　雲林1議員參選人收押",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020092.aspx",
+      "summary": "（中央社記者姜宜菁雲林縣2日電）雲林縣第五選區蔡姓議員參選人疑以加碼生育津貼之名發放現金涉賄選，檢方獲報偵辦，昨天帶回蔡姓參選人和其胞兄、現任蔡姓議員等27人，諭令蔡姓議員交保，法院裁定蔡姓參選人收押禁見。"
+    },
+    {
+      "title": "研究人員揭露惡意軟體BambooToken，透過MQTT通訊協定控制Windows與Linux電腦",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179370",
+      "summary": "資安業者Lumen近日揭露新型惡意軟體BambooToken，根據樣本與網路遙測，該惡意軟體至少自2023年2月起開始活動，並持續至2026年7月，主要出現在亞洲及南美，已有十多家企業受害，包括行動App後端、旅館、生技、法律、金融、加密貨幣及軟體開發業者。目前該惡意軟體尚無法歸因於特定攻擊組織，但Lumen認為其攻擊目標與活動模式，符合中國相關威脅行動的特徵。"
+    },
+    {
+      "title": "祝壽廣澤尊王很科技 旗津天聖宮請來AI機器人、機器狗",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/life/breakingnews/5593803",
+      "summary": "今（2）日適逢廣澤尊王十三太保聖誕千秋，高雄旗津天聖宮今晚攜手旗津國小太鼓隊祝壽，現場還有AI機器狗體驗，讓小朋友親自學習、操控機器狗，民眾也可與TaiiBot台智寶人形機器人...…"
+    },
+    {
+      "title": "美國9月非農就業新增2.9萬人遠遜預期　失業率微升",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aopl/202610020333.aspx",
+      "summary": "（中央社華盛頓2日綜合外電報導）美國勞工統計局（BLS）今天公布，9月非農就業人數經季節調整後新增2萬9000人，遠低於市場預估值，顯示勞動市場乃至整體經濟意外放緩；失業率微幅升高。"
+    },
+    {
+      "title": "美國制裁涉ATM吐鈔攻擊詐欺網路，全美相關攻擊損失逾4千萬美元",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179336",
+      "summary": "美國財政部外國資產控制辦公室（OFAC）對與委內瑞拉犯罪組織Tren de Aragua（TdA）有關的詐欺網路實施制裁，8名個人及2家公司遭列入制裁對象，相關犯罪活動包括ATM吐鈔攻擊及洗錢。美國財政部指出，截至2025年8月，美國境內已有超過1,500起疑似ATM吐鈔攻擊，通報損失合計4,073萬美元。"
+    },
+    {
+      "title": "美國防廠商盼深化與台合作　助台增強自我防衛能力",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020266.aspx",
+      "summary": "（中央社記者吳書緯台北2日電）2家均有研製無人機的美國國防廠商AEVEX與Shield AI今天皆期盼與台灣深化合作，助台強化自我防衛能力；Shield AI共同創辦人暨總裁曾國光表示，台灣有優秀的供應鏈和廠商能製造一流產品，如同晶片一樣，台灣無人機絕對有能力競爭國際市場。"
+    },
+    {
+      "title": "美就業數據疲軟壓抑升息預期　華爾街股市開高",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020341.aspx",
+      "summary": "（中央社紐約2日綜合外電報導）美國最新公布的9月非農就業新增人數意外放緩，分析師認為這有助加強聯邦準備理事會（Fed）於10月會議維持利率不變的市場預期，美國公債殖利率驟降，美股3大指數今天開高。"
+    },
+    {
+      "title": "聯發科天璣9500獲三星平板採用　攻裝置端AI與高階市場",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020275.aspx",
+      "summary": "（中央社記者吳家豪台北2日電）IC設計大廠聯發科今天宣布，旗下旗艦級行動晶片天璣9500獲三星電子採用，導入全新平板電腦Galaxy Tab S12 Ultra與Galaxy Tab S12+，主打裝置端人工智慧（AI）與繪圖能力，進一步深化雙方在高階平板市場的長期合作。"
+    },
+    {
+      "title": "興德宮餐會　沈伯洋蘇巧慧提雙北共好、蔣萬安談政績",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020189.aspx",
+      "summary": "（中央社記者葉蓁芸、劉建邦台北2日電）選舉熱戰起跑，沈伯洋、蘇巧慧、蔣萬安今天中午分別出席在台北市魚果批發市場內的興德宮餐會，蔣萬安致詞細數任內政績、沈伯洋與蘇巧慧提雙北共好。3人未碰到面。"
+    },
+    {
+      "title": "英國示警中國情報機構藉資助AI、資安等研究，提升間諜技術能力",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179340",
+      "summary": "英國情報機構向大學及研究人員發布間諜活動警告。軍情五處（MI5）調查發現，超過100名與英國有關的學者曾參與中國國安部（MSS）透過中國通用技術研究院（China General Technology Research Institute，CGTRI）資助的研究，其中部分研究人員可能不知道自己參與的研究由該研究院資助。"
+    },
+    {
+      "title": "華邦電路竹廠4工人遭化學液噴濺灼傷　意識清醒送醫",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020144.aspx",
+      "summary": "（中央社記者洪學廣高雄2日電）記憶體大廠華邦電子股份有限公司高雄市路竹分公司外包商人員今天在廠區進行化學管路施工時，不慎遭化學液體（氫氟酸及硝酸混合廢液）噴濺，造成4名工人受傷，意識清醒送醫。"
+    },
+    {
+      "title": "萊比錫機場無人機炸彈攻擊事件   指向GRU暗殺部隊",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/world/breakingnews/5593831",
+      "summary": "德國萊比錫—哈雷機場8月發生無人機炸彈攻擊未遂，《政客》（Politico）網站和《每日電訊報》2日披露更多內幕，指出一名與俄羅斯軍事情報總局（GRU）關係密切的男子，疑似負責...…"
+    },
+    {
+      "title": "蕭副總統：台灣品牌走向世界　珍奶小吃成美食外交",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020328.aspx",
+      "summary": "（中央社記者葉素萍台北2日電）副總統蕭美琴今天表示，台灣連鎖加盟產業從早餐、超商、手搖飲到各式餐飲零售，不僅支撐民眾日常生活與中小企業生態系，更有許多品牌走向世界，讓國際友人透過台灣美食與服務進一步認識台灣，這就是最在地、也最具影響力的「美食外交」。"
+    },
+    {
+      "title": "蕭副總統：政府非無所不在　民間力量撐社會韌性",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020279.aspx",
+      "summary": "（中央社記者葉素萍台中2日電）副總統蕭美琴今天表示，即使政府持續擴大、檢視社會照顧政策，也不可能無所不在；台灣經濟發展亮眼數字背後，仍有一些角落需要民間力量共同支撐，這也是她經常提到的「社會韌性」。"
+    },
+    {
+      "title": "蕭美琴參觀AI應用展　漢翔固定翼無人機黑翼X首亮相",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020292.aspx",
+      "summary": "（中央社記者吳家豪台北2日電）副總統蕭美琴今天參觀2026台中AI應用暨智慧製造展漢翔展位，實地了解台灣在無人機研發與智慧防衛領域的最新成果；漢翔自主研發的固定翼戰術無人機「黑翼X」原型機在展會中首度亮相，展現精準打擊與AI視覺導航等前瞻技術。"
+    },
+    {
+      "title": "藍指沈伯洋教育政策四大皆空　綠：歡迎提出不同方案",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020352.aspx",
+      "summary": "（中央社記者王承中台北2日電）民進黨台北市長參選人沈伯洋提出教育政策，國民黨團書記長許宇甄今天表示，沈伯洋平常對教育零關心，法案零提案，選舉到了才來蹭聲量。沈伯洋的教育政策，只有一個空字可以形容，呼籲沈伯洋先承諾不阻擋未來營養午餐專法的二、三讀程序。"
+    },
+    {
+      "title": "虎尾產業園區農地變更遭指卡關　農業部：依法審查",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020244.aspx",
+      "summary": "（中央社記者汪淑芬台北2日電）近日雲林縣政府質疑農業部對於虎尾產業園區農業用地變更審查刻意卡關。農業部今天澄清，為保護農業生產環境及農民權益，一切依法審查。"
+    },
+    {
+      "title": "軟銀完成對OpenAI 300億美元投資　持股達13%",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ait/202610020016.aspx",
+      "summary": "（中央社舊金山1日綜合外電報導）軟銀集團（SoftBank Group）今天表示，已完成對ChatGPT開發商OpenAI的300億美元投資，這是軟銀履行承諾、參與這家人工智慧（AI）公司最新一輪募資的一部分。"
+    },
+    {
+      "title": "軟體供應鏈攻擊擴大至CI/CD，企業需防建置流程遭操弄",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179322",
+      "summary": "Google旗下資安團隊Mandiant近日針對軟體開發與CI/CD環境提出防護建議。根據他們近期觀察到的攻擊活動，軟體供應鏈攻擊已不只涉及遭污染的開源套件，攻擊者也鎖定企業信任的安全掃描工具、公用函式庫及AI程式開發工具，開發人員工作站與CI/CD基礎架構同樣成為攻擊目標。"
+    },
+    {
+      "title": "返鄉青農獲十大傑青　黃衍勳智慧農業助轉型",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020297.aspx",
+      "summary": "（中央社記者潘姿羽台北2日電）國發會地方創生傳捷報，雲林縣水林鄉地方創生青年培力工作站主持人、微醺農場負責人黃衍勳，以導入智慧農業與永續耕作模式，為傳統農漁產業帶來創新轉型契機，獲選第64屆中華民國「農漁環保類」十大傑出青年。"
+    },
+    {
+      "title": "進台灣大賽仍全力搶勝　葉君璋：這樣比較公平",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020267.aspx",
+      "summary": "（中央社記者蘇志畬台北2日電）中華職棒味全龍隊提前取得台灣大賽門票，但季後賽另2支隊伍尚未出爐，龍隊總教練葉君璋說：「我們還是會想辦法贏，這樣對大家比較公平。」"
+    },
+    {
+      "title": "金枝演社打造新野台戲「飛賊夜來香」　北藝中心戶外演出",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/acul/202610020301.aspx",
+      "summary": "（中央社記者趙靜瑜台北2日電）金枝演社劇團推出年度旗艦大戲「飛賊夜來香」，將以當代野台的形式在台北表演藝術中心北斗座戶外廣場演出，現場有特色餐飲市集進駐，要讓觀眾體驗早期廟口野台戲回憶。"
+    },
+    {
+      "title": "金管會新人事案　陳家珍任銀行局主秘",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020280.aspx",
+      "summary": "（中央社記者蘇思云台北2日電）金管會今天表示，銀行局主任秘書周正山於9月14日調陞金融市場發展及創新處處長，遺缺由銀行局組長陳家珍調任，並在今天到職。"
+    },
+    {
+      "title": "開源AI代理框架Pi邁入1.0，另推出長時間代理框架Pi Durable",
+      "date": "2026-10-02",
+      "category": "科技",
+      "original_category": "科技",
+      "source": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/news/179369",
+      "summary": "Earendil發布開源AI代理框架Pi 1.0，同時推出實驗性代理執行框架Pi Durable，讓開發者建立可長時間執行的AI代理應用。當執行中的服務重新啟動或意外中斷，Pi Durable可以讀取先前保存的進度，接著處理尚未完成的工作，也支援多條對話同時執行及多人介入同一代理任務。"
+    },
+    {
+      "title": "阮鳳儀「幸福快樂的日子」入選東京影展　舒華與貓咪海報首曝光",
+      "date": "2026-10-02",
+      "category": "娛樂",
+      "original_category": "娛樂",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/amov/202610020218.aspx",
+      "summary": "（中央社記者王心妤台北2日電）「美國女孩」導演阮鳳儀新片「幸福快樂的日子」傳出捷報，入選東京影展「世界焦點」單元，也是繼多倫多影展及釜山影展後再獲肯定，劇組今天釋出舒華與貓咪相視的前導海報。"
+    },
+    {
+      "title": "陳念琴惜敗印度選手　名古屋亞運女子拳擊奪銀",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020226.aspx",
+      "summary": "（中央社記者黎建忠名古屋2日電）台灣女子拳擊好手陳念琴今天在名古屋亞運65公斤級金牌戰，面對印度選手胡達，雙方激烈交戰3回合，陳念琴以2比3的些微差距落敗，但仍帶回一面銀牌。"
+    },
+    {
+      "title": "雄鷹擊退桃猿　幫兄弟點亮下半季封王魔術數字M2",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020348.aspx",
+      "summary": "（中央社記者蘇志畬台北2日電）中華職業棒球大聯盟台鋼雄鷹隊今天在高雄市澄清湖棒球場以7比3擊敗樂天桃猿隊，幫中信兄弟隊亮起下半季封王魔術數字M2，明天如果桃猿再敗且兄弟擊敗悍將，兄弟就可拋出彩帶。"
+    },
+    {
+      "title": "雨彈升級雨區擴大！北北基宜花慎防豪、大雨 大雷雨轟宜蘭",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "未分類",
+      "source": "自由時報",
+      "region": "taiwan",
+      "url": "https://news.ltn.com.tw/news/life/breakingnews/5593835",
+      "summary": "雨彈升級！中央氣象署深夜發布豪、大雨特報提醒，受東北季風影響，易有短延時強降雨，夜間到明（3）日宜蘭縣山區有局部大雨或豪雨，大台北、宜蘭、花蓮地區有局部大雨發生機率，注意雷擊及強...…"
+    },
+    {
+      "title": "雲林縣府質疑中央卡關爭取南亞科擴廠　經部：尊重企業自主",
+      "date": "2026-10-02",
+      "category": "財經",
+      "original_category": "財經",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/afe/202610020293.aspx",
+      "summary": "（中央社記者曾筠庭台北2日電）國科會昨天通過南亞科進駐屏東設廠案，引發雲林縣政府質疑中央對於虎尾產業園區農業用地變更審查刻意卡關，才導致南亞科最後落腳屏東。對此，經濟部今天表示，業者投資選擇考慮多元，政府尊重企業自主選擇，並無由政府指定業者去何處投資的情況。"
+    },
+    {
+      "title": "雲林議員參選人遭指涉賄遭羈押　家屬擬提抗告",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020330.aspx",
+      "summary": "（中央社記者姜宜菁雲林縣2日電）蔡姓雲林縣議員參選人遭指涉賄遭羈押，參選人家人今天表示，希望司法還清白，律師預計5日提抗告。"
+    },
+    {
+      "title": "韓國國慶　新任代表盼台韓新型合作成世界經濟創新動力",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020332.aspx",
+      "summary": "（中央社記者楊堯茹台北2日電）韓國國慶酒會今天登場，新任韓國駐台代表黃載皓表示，韓台貿易緊密，期待在全球供應鏈中擴大合作領域，並以AI時代新型合作的多樣化面貌，作為世界經濟的創新動力；外交部政次吳志中則說，台韓應以策略性思維深化合作，共同打造非紅供應鏈。"
+    },
+    {
+      "title": "高屏攝護腺癌初診第4期逾3成　醫籲及早評估檢測",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020224.aspx",
+      "summary": "（中央社記者林巧璉高雄2日電）台灣泌尿腫瘤醫學會表示，111年資料顯示，高屏地區攝護腺癌初診即第4期的比例33%至35%，高於北北基22%；醫師籲熟齡男性定期評估，及早檢測治療。"
+    },
+    {
+      "title": "高雄冬季旅展登場　高雄、屏東館祭出搶標、折扣優惠",
+      "date": "2026-10-02",
+      "category": "生活",
+      "original_category": "生活",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/ahel/202610020210.aspx",
+      "summary": "（中央社記者林巧璉高雄2日電）「2026高雄市旅行公會冬季國際旅展」今天起，一連4天在高雄展覽館登場，活動集結200家廠商、近400格展位，其中高雄館、屏東館等城市主題館祭出一元搶標、滿額折扣等優惠吸引買氣。"
+    },
+    {
+      "title": "高雄楠梓車行命案  主嫌遭羈押禁見7共犯複訊中",
+      "date": "2026-10-02",
+      "category": "社會",
+      "original_category": "社會",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/asoc/202610020185.aspx",
+      "summary": "（中央社記者洪學廣高雄2日電）高雄穆姓男子報案將張姓車行同事打死，並載屍前往楠梓警分局自首。警方查出包括車行負責人和員工、穆男友人等7名涉案共犯。橋檢依重傷害致死罪聲押穆男，獲橋頭地院裁准。"
+    },
+    {
+      "title": "黃國昌指農田水利桃園處長幫喊凍蒜　質疑違反選罷法",
+      "date": "2026-10-02",
+      "category": "政治",
+      "original_category": "政治",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aipl/202610020198.aspx",
+      "summary": "（中央社記者曾以寧、林長順台北2日電）民眾黨主席黃國昌今天表示，檢警查賄標準令人起疑，尤其農田水利署桃園管理處長黃華煌在請吃飯、送禮盒的活動中幫民進黨桃園市長參選人黃世杰喊「凍蒜」，涉嫌違反選罷法、行政中立法、貪污治罪條例等法。"
+    },
+    {
+      "title": "龍隊高張力戰局擊倒悍將　助獅隊取得季後賽門票",
+      "date": "2026-10-02",
+      "category": "體育",
+      "original_category": "體育",
+      "source": "中央社",
+      "region": "taiwan",
+      "url": "https://www.cna.com.tw/news/aspt/202610020353.aspx",
+      "summary": "（中央社記者蘇志畬台北2日電）中華職業棒球大聯盟味全龍隊今天以2比1擊敗富邦悍將隊，讓統一7-ELEVEn獅隊成為取得季後賽門票第2隊；已晉級台灣大賽的龍隊經歷高張力賽事，龍隊總教練葉君璋說，有助備戰。"
+    }
+  ],
+  "classified_at": "2026-10-03T05:34:01",
+  "classification_stats": {
+    "總計": 137,
+    "未分類": 0,
+    "NVIDIA Nemotron": 0,
+    "OpenAI GPT": 0,
+    "Google Gemini": 0,
+    "Agnes": 0,
+    "RSS保留": 126,
+    "體育": 1,
+    "健康": 1,
+    "政治": 6,
+    "科技": 1,
+    "生活": 2
+  },
+  "classification_providers": [
+    "nvidia",
+    "openai",
+    "google",
+    "agnes"
+  ]
+}
